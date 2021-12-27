@@ -1,0 +1,20 @@
+echo "hello welcome to foss lab"
+a=10
+b=20
+c=31
+echo "a=$a,b=$b"
+c=`expr $a +$b`
+d=`expr $a - $b`
+e=`expr $a \*$b`
+f=`expr $a \ $b`
+echo "$c,$d,$e,$f"
+sum=`expr $a+$b+$c`
+avrg=`expr $sum/3`
+echo "$sum,$avrg"
+Output:
+30
+-10
+200
+0.5
+61
+20.1
