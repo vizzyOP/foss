@@ -1,0 +1,9 @@
+echo "enter three values a,b,c"
+read a b c
+sum=`expr $a+$b+4$c`
+avg=`expr $sum/3`
+echo "sum of $a$b$c is $sum\naverage of $a$b$c is $avg"
+output:
+10 20 30
+sum of 102030 is 60
+average of 102030 is 20
