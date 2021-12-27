@@ -1,0 +1,20 @@
+echo "1-currently logged user and his logname\n2-Current shell\n3-home directory\n4-Operating system type\n5-current path setting\n6-current working directory\n7-currently logged no of users"
+read choice
+case $choice in
+ 1)echo "currently logged user is $USER and his username is $LOGNAME"
+ ;;
+ 2)echo "current shell is $SHELL"
+ ;;
+ 3)echo "Home directory is $HOME"
+ ;;
+ 4)echo "operating systekm type is\n`cat /proc/version`"
+ ;;
+ 5)echo "currently path setting is \n $PATH"
+ ;;
+ 6)echo "current working directory is `pwd`"
+ ;;
+ 7)echo "currently logged no of users are `who|wc -l"
+ ;;
+ echo "Enter the valid Option"
+ ;;
+ esac
